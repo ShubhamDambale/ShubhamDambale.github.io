@@ -20,6 +20,10 @@
   --medium-font: 1.8rem;
   --p-font: 0.941rem;
 }
+
+
+
+
 section {
   padding: 50px 10%;
 }
@@ -505,6 +509,60 @@ form textarea {
     margin-left: 25%;
   }
 }
+
+@media (max-width: 480px) {
+  .services-content {
+    grid-template-columns: repeat(auto-fit, minmax(200px, auto));
+  }
+
+  #profile{
+    width: 300px;
+    height: 300px;
+  }
+
+  .about-text p {
+    /* font-size: var(--p-font);
+    font-weight: 400;
+    text-align: justify; */
+    width: 300px;
+    margin-left: 20px;
+  }
+
+  .information {
+    margin-left: 20px;
+  }
+
+  .information .info-box span {
+    font-weight: 200;
+    /* margin-left: 1rem; */
+    font-size: 15px;
+  }
+
+  .about-text a {
+    margin-left: 20px;
+  }
+
+  .portfolio-content {
+    margin-left: 20px;
+    margin-right: 12px;
+  }
+
+  .home-text h1 {
+    font-size: 25px;
+  }
+
+  .home-text p {
+    margin-right: 12px;
+    text-align: center;
+  }
+
+  .home {
+    display: flex;
+    /* margin-left: 20px;
+    margin-right: 22px; */
+  } 
+}
+
 @media (max-width: 340px) {
   :root {
     --big-font: 1.7rem;
@@ -523,6 +581,11 @@ form textarea {
   .portfolio-content {
     grid-template-columns: repeat(auto-fit, minmax(200px, auto));
   }
+  /* .services-content {
+    grid-template-columns: repeat(auto-fit, minmax(200px, auto));
+  } */
+  
+
   .contact-form form{
     width: 300px;
   }
