@@ -10,6 +10,11 @@
     <!-- Box Icons -->
     <link rel="stylesheet"
   href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+
+  <link
+rel="stylesheet"
+href="https://unpkg.com/github-calendar@latest/dist/github-calendar-responsive.css"
+/>
  
 </head>
 <body>
@@ -26,6 +31,7 @@
             <li><a href="#services">Skills</a></li>
             <li><a href="#portfolio">Projects</a></li>
             <li><a href="#contact">Contact</a></li>
+            <li><a href="https://drive.google.com/file/d/1f7dUwjXdIbxx1AdEegMWABlyygc4HpCe/view?usp=sharing">Resume</a></li>
             <div class="bx bx-moon" id="darkmode"></div>
         </ul>
     </header>
@@ -83,7 +89,7 @@
                         <span>shubhamdambale123@gmail.com</span>
                     </div>
                 </div>
-                <a href="https://drive.google.com/file/d/1AdPsA8ffrxhuYIOb3u7mM5ixGuxFJiZp/view?usp=sharing" class="btn" target="_blank">Download Cv</a>
+                <a download  href="shubham_dambale_resume.pdf" class="btn" target="_blank">Download Cv</a>
             </div>
         </div>
     </section>
@@ -246,6 +252,29 @@
             
         </div>
     </section>
+      
+    <!-- Github States -->
+    <div class="calendar">
+        <!-- Loading stuff -->
+        Loading the data just for you.
+      </div>
+
+      <br>
+      <div class="container">
+
+        <h2 class="sub-title" style="text-align:center;margin-bottom: 40px;">My Statistics</h2>
+        <p align="left">
+        <p align="center" style="width:80%;margin:auto;" >
+          <img id="stats" width="48%" src="https://github-readme-stats.vercel.app/api?username=ShubhamDambale&show_icons=true&theme=monokai" />
+          <img id="stats2" width="48%" src="https://github-readme-streak-stats.herokuapp.com/?user=ShubhamDambale&theme=monokai" />
+        </p>
+    
+    
+        </div>
+
+      
+
+
     <!-- Contact -->
     <section class="contact" id="contact">
         <div class="heading">
@@ -261,25 +290,47 @@
             </form>
         </div>
     </section>
+    <!-- <div class="copyright">
+       <h3>Contact Details</h3>
+       <h4>Mobile No:- 8999949450</h4>
+       <h4>Gmail:- shubhamdambale123@gmail.com</h4>
+        
+    </div> -->  
     <!-- Footer -->
     <div class="footer">
         <h2>Shubham Dambale</h2>
+        <h3>Contact Me</h3>
+        <h4>Mobile No :- 8999949450</h4>
+        <h4>Gmail :- shubhamdambale123@gmail.com</h4>
+        <br>
         <div class="footer-social">
             <a href="#"><i class='bx bxl-facebook' ></i></a>
             <a href="#"><i class='bx bxl-twitter' ></i></a>
             <a href="#"><i class='bx bxl-instagram' ></i></a>
             <a href="#"><i class='bx bxl-youtube' ></i></a>
+            
         </div>
  
     </div>
     <!-- Copyright -->
     <div class="copyright">
         <p>Create By <a href="">Shubham Dambale</a> | All Right Reserved.</p>
+        
     </div>
  
  
  
     <!-- Link To JS -->
     <script src="./js/script.js"></script>
+
+    <script
+  src="https://unpkg.com/github-calendar@latest/dist/github-calendar.min.js"
+></script>
+
+    <script>
+        GitHubCalendar(".calendar", "ShubhamDambale");
+        // or enable responsive functionality
+        GitHubCalendar(".calendar", "ShubhamDambale", { responsive: true });
+      </script>
 </body>
 </html>
