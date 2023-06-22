@@ -262,7 +262,7 @@ span {
 }
 
 
-.services-box {
+.skills-card {
   padding: 20px;
   width: 260px;
   display: flex;
@@ -277,28 +277,28 @@ span {
  background-color: #02225a;
 } */
 
-.services-box h3 {
+.skills-card h3 {
   font-size: 1rem;
   font-weight: 600;
   margin: 0.7rem 0 0.4rem;
 }
-.services-box:hover h3{
+.skills-card:hover h3{
   color: #fff;
 }
-.services-box .bx {
+.skills-card .bx {
   padding-top: 2rem;
   font-size: 54px;
   color: var(--main-color);
 }
-.services-box:hover .bx{
+.skills-card:hover .bx{
   color: #22cf91;
 }
-.services-box a {
+.skills-card a {
   color: var(--main-color);
   font-size: var(--p-font);
   font-weight: 500;
 }
-.services-box:hover a{
+.skills-card:hover a{
   color: #8b8a8f;
 }
 .portfolio-content {
