@@ -28,8 +28,8 @@ href="https://unpkg.com/github-calendar@latest/dist/github-calendar-responsive.c
             <li><a href="#home">Home</a></li>
             <li><a href="#about">About</a></li>
             <!-- <li><a href="#skills">Skills</a></li> -->
-            <li><a href="#services">Skills</a></li>
-            <li><a href="#portfolio">Projects</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
             <li><a href="#contact">Contact</a></li>
             <li><a href="https://drive.google.com/file/d/1f7dUwjXdIbxx1AdEegMWABlyygc4HpCe/view?usp=sharing">Resume</a></li>
             <div class="bx bx-moon" id="darkmode"></div>
@@ -39,8 +39,8 @@ href="https://unpkg.com/github-calendar@latest/dist/github-calendar-responsive.c
  
     <section class="home" id="home">
         <div class="social">
-            <a href="https://github.com/ShubhamDambale" target="_blank"><i class='bx bxl-github'></i></a>
-            <a href="https://www.linkedin.com/in/shubham-dambale-115582202/" target="_blank"><i class='bx bxl-linkedin'></i></a>
+            <a href="https://github.com/ShubhamDambale" id="contact-github" target="_blank"><i class='bx bxl-github'></i></a>
+            <a href="https://www.linkedin.com/in/shubham-dambale-115582202/" target="_blank" id="contact-linkedin"><i class='bx bxl-linkedin'></i></a>
             <a href="https://leetcode.com/shubhamdambale123/" target="_blank"><i class='bx bx-code-alt'></i></a>
         </div> 
         
@@ -68,10 +68,10 @@ href="https://unpkg.com/github-calendar@latest/dist/github-calendar-responsive.c
         <!-- About Content -->
         <div class="about-container">
             <div class="about-img">
-                <img src="1.jpg" alt="" id="profile">
+                <img src="1.jpg" alt="" id="profile" class="home-img">
             </div>
-            <div class="about-text">
-                <p>Hey, My name is Shubham Dambale. I pursued Backend development at Masai School, Bengaluru(Karnataka). I'm a passionate coder and an enthusiastic Java Backend Developer capable of applying programming skills to solve complex problems. Seeking a challenging role in the field of software development that will offer an opportunity for further development of my abilities, skills and knowledge in an organization.</p>
+            <div class="about-text" id="user-detail-intro">
+                <p id="user-detail-name">Hey, My name is Shubham Dambale. I pursued Backend development at Masai School, Bengaluru(Karnataka). I'm a passionate coder and an enthusiastic Java Backend Developer capable of applying programming skills to solve complex problems. Seeking a challenging role in the field of software development that will offer an opportunity for further development of my abilities, skills and knowledge in an organization.</p>
                 <div class="information">
                     <!-- Box 1 -->
                     <div class="info-box">
@@ -138,7 +138,7 @@ href="https://unpkg.com/github-calendar@latest/dist/github-calendar-responsive.c
  
     </section> -->
     <!-- Services -->
-    <section class="services" id="services">
+    <section class="services" id="skills" >
         <div class="heading">
             <h2>Skills</h2>
             <span>Our Skills</span>
@@ -205,7 +205,7 @@ href="https://unpkg.com/github-calendar@latest/dist/github-calendar-responsive.c
             <span>Our Recent Work</span>
         </div>
         <div class="portfolio-content">
-            <div class="portfolio-img">
+            <div class="project-card">
                 <img src="55.jpg" alt="">
                 <h1>Bath & Body Clone</h1>
                 <br>
@@ -220,7 +220,7 @@ href="https://unpkg.com/github-calendar@latest/dist/github-calendar-responsive.c
                         <a href="https://beamish-palmier-e5b41f.netlify.app/" target="_blank"><button class="btn-hover2">Live</button></a>
                 
             </div>
-            <div class="portfolio-img">
+            <div class="project-card">
                 <img src="56.png" alt="">
                 <h1>EverHour Clone</h1>
                 <br>
@@ -235,7 +235,7 @@ href="https://unpkg.com/github-calendar@latest/dist/github-calendar-responsive.c
                        <a href="https://github.com/chinnijagadeesh/godly-pleasure-4788" target="_blank"> <button class="btn-hover1">Code</button></a>
              <a href="https://chipper-fenglisu-c45517.netlify.app/" target="_blank"><button class="btn-hover2">Live</button></a>   
             </div>
-            <div class="portfolio-img">
+            <div class="project-card">
                 <img src="58.jpg" alt="">
                 <h1>Fastrack Clone</h1>
                 <br>
@@ -254,7 +254,7 @@ href="https://unpkg.com/github-calendar@latest/dist/github-calendar-responsive.c
     </section>
       
     <!-- Github States -->
-    <div class="calendar">
+    <div class="react-activity-calendar">
         <!-- Loading stuff -->
         Loading the data just for you.
       </div>
@@ -300,8 +300,8 @@ href="https://unpkg.com/github-calendar@latest/dist/github-calendar-responsive.c
     <div class="footer">
         <h2>Shubham Dambale</h2>
         <h3>Contact Me</h3>
-        <h4>Mobile No :- 8999949450</h4>
-        <h4>Gmail :- shubhamdambale123@gmail.com</h4>
+        <h4  id="contact-phone">Mobile No :- 8999949450</h4>
+        <h4 id="contact-email">Gmail :- shubhamdambale123@gmail.com</h4>
         <br>
         <div class="footer-social">
             <a href="#"><i class='bx bxl-facebook' ></i></a>
@@ -328,9 +328,9 @@ href="https://unpkg.com/github-calendar@latest/dist/github-calendar-responsive.c
 ></script>
 
     <script>
-        GitHubCalendar(".calendar", "ShubhamDambale");
+        GitHubCalendar(".react-activity-calendar", "ShubhamDambale");
         // or enable responsive functionality
-        GitHubCalendar(".calendar", "ShubhamDambale", { responsive: true });
+        GitHubCalendar(".react-activity-calendar", "ShubhamDambale", { responsive: true });
       </script>
 </body>
 </html>

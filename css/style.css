@@ -331,12 +331,12 @@ span {
   display: flex;
   justify-content: space-between;
 } */
-.portfolio-img {
+.project-card {
   overflow: hidden;
   border-radius: 0.5rem;
  height: 550px;
 }
-.portfolio-img img {
+.project-card img {
   width: 100%;
   height: 200px;
   display: block;
